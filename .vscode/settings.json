@@ -1,0 +1,15 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "sequelize_test",
+            "dialect": "PostgreSQL",
+            "isActive": true,
+            "isConnected": true,
+            "name": "sequelize",
+            "password": "root",
+            "port": 5432,
+            "server": "localhost",
+            "username": "postgres"
+        }
+    ]
+}
