@@ -1,15 +1,12 @@
 const { sequelize } = require('./con');
-const usersModel = require('./models/users.model');
+const users = require('./models/users.model');
+const posts = require('./models/posts.model');
 
 sequelize
   .authenticate()
-  .then(async result => {
-    try {
-      console.log(result);
-      await usersModel(sequelize);
-    } catch (error) {
-      console.log(error);
-    }
+  .then(async () => {
+    await users.sync({ force: true });
+    await posts.sync({ force: true });
   })
   .catch(err => {
     console.error(err);

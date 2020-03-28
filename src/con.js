@@ -6,6 +6,7 @@ const init = () => {
   const sequelize = new Sequelize(DB_DB, DB_USER, DB_PASS, {
     host: DB_HOST,
     dialect: 'postgres'
+    // logging: false
   });
   // Sequelize will keep the connection open by default, and use the same connection for all queries.
   // If you need to close the connection, call sequelize.close() (which is asynchronous and returns a Promise).
