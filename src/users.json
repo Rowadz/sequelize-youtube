@@ -1,0 +1,185 @@
+[
+  {
+    "id": 1,
+    "firstName": "rowad",
+    "about": "about rowad",
+    "email": "example@test.com",
+    "role": "user",
+    "created_at": "2020-03-31T19:21:01.068Z",
+    "updated_at": "2020-03-31T19:21:01.068Z",
+    "supervisor_id": null,
+    "supervisor": null,
+    "employees": [],
+    "followers": [
+      {
+        "id": 3,
+        "firstName": "polo",
+        "about": "about plo",
+        "email": "polo@test.com",
+        "role": "user",
+        "created_at": "2020-03-31T19:21:26.081Z",
+        "updated_at": "2020-03-31T19:21:26.081Z",
+        "supervisor_id": null,
+        "users_followers": {
+          "id": 1,
+          "created_at": "2020-04-03T22:41:36.409Z",
+          "updated_at": "2020-04-03T22:41:36.409Z",
+          "follower_id": 1,
+          "following_id": 3
+        }
+      }
+    ],
+    "following": [
+      {
+        "id": 3,
+        "firstName": "polo",
+        "about": "about plo",
+        "email": "polo@test.com",
+        "role": "user",
+        "created_at": "2020-03-31T19:21:26.081Z",
+        "updated_at": "2020-03-31T19:21:26.081Z",
+        "supervisor_id": null,
+        "users_followers": {
+          "id": 2,
+          "created_at": "2020-04-03T22:41:39.336Z",
+          "updated_at": "2020-04-03T22:41:39.336Z",
+          "follower_id": 3,
+          "following_id": 1
+        }
+      },
+      {
+        "id": 4,
+        "firstName": "name",
+        "about": "about name",
+        "email": "name@test.com",
+        "role": "user",
+        "created_at": "2020-03-31T19:21:36.022Z",
+        "updated_at": "2020-03-31T19:21:36.022Z",
+        "supervisor_id": 3,
+        "users_followers": {
+          "id": 3,
+          "created_at": "2020-04-03T22:41:48.303Z",
+          "updated_at": "2020-04-03T22:41:48.303Z",
+          "follower_id": 4,
+          "following_id": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "firstName": "sarah",
+    "about": "about sarah",
+    "email": "example2@test.com",
+    "role": "user",
+    "created_at": "2020-03-31T19:21:14.866Z",
+    "updated_at": "2020-03-31T19:21:14.866Z",
+    "supervisor_id": null,
+    "supervisor": null,
+    "employees": [],
+    "followers": [],
+    "following": []
+  },
+  {
+    "id": 3,
+    "firstName": "polo",
+    "about": "about plo",
+    "email": "polo@test.com",
+    "role": "user",
+    "created_at": "2020-03-31T19:21:26.081Z",
+    "updated_at": "2020-03-31T19:21:26.081Z",
+    "supervisor_id": null,
+    "supervisor": null,
+    "employees": [
+      {
+        "id": 4,
+        "firstName": "name",
+        "about": "about name",
+        "email": "name@test.com",
+        "role": "user",
+        "created_at": "2020-03-31T19:21:36.022Z",
+        "updated_at": "2020-03-31T19:21:36.022Z",
+        "supervisor_id": 3
+      }
+    ],
+    "followers": [
+      {
+        "id": 1,
+        "firstName": "rowad",
+        "about": "about rowad",
+        "email": "example@test.com",
+        "role": "user",
+        "created_at": "2020-03-31T19:21:01.068Z",
+        "updated_at": "2020-03-31T19:21:01.068Z",
+        "supervisor_id": null,
+        "users_followers": {
+          "id": 2,
+          "created_at": "2020-04-03T22:41:39.336Z",
+          "updated_at": "2020-04-03T22:41:39.336Z",
+          "follower_id": 3,
+          "following_id": 1
+        }
+      }
+    ],
+    "following": [
+      {
+        "id": 1,
+        "firstName": "rowad",
+        "about": "about rowad",
+        "email": "example@test.com",
+        "role": "user",
+        "created_at": "2020-03-31T19:21:01.068Z",
+        "updated_at": "2020-03-31T19:21:01.068Z",
+        "supervisor_id": null,
+        "users_followers": {
+          "id": 1,
+          "created_at": "2020-04-03T22:41:36.409Z",
+          "updated_at": "2020-04-03T22:41:36.409Z",
+          "follower_id": 1,
+          "following_id": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "firstName": "name",
+    "about": "about name",
+    "email": "name@test.com",
+    "role": "user",
+    "created_at": "2020-03-31T19:21:36.022Z",
+    "updated_at": "2020-03-31T19:21:36.022Z",
+    "supervisor_id": 3,
+    "supervisor": {
+      "id": 3,
+      "firstName": "polo",
+      "about": "about plo",
+      "email": "polo@test.com",
+      "role": "user",
+      "created_at": "2020-03-31T19:21:26.081Z",
+      "updated_at": "2020-03-31T19:21:26.081Z",
+      "supervisor_id": null
+    },
+    "employees": [],
+    "followers": [
+      {
+        "id": 1,
+        "firstName": "rowad",
+        "about": "about rowad",
+        "email": "example@test.com",
+        "role": "user",
+        "created_at": "2020-03-31T19:21:01.068Z",
+        "updated_at": "2020-03-31T19:21:01.068Z",
+        "supervisor_id": null,
+        "users_followers": {
+          "id": 3,
+          "created_at": "2020-04-03T22:41:48.303Z",
+          "updated_at": "2020-04-03T22:41:48.303Z",
+          "follower_id": 4,
+          "following_id": 1
+        }
+      }
+    ],
+    "following": []
+  }
+]
